@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+# Shock Wave Repair Shop
 
-## Project info
+Bienvenido al repositorio de **Shock Wave Repair Shop**. Este proyecto es una aplicación web construida con **React, Vite, TypeScript, Tailwind CSS y shadcn-ui**.
 
-**URL**: https://lovable.dev/projects/b4c3b7d5-55cb-4d78-a87e-82727ead43ac
+## Tecnologías utilizadas
 
-## How can I edit this code?
+- **Vite** - Para el entorno de desarrollo rápido.
+- **React** - Biblioteca para la construcción de interfaces de usuario.
+- **TypeScript** - Tipado estático para mejorar la calidad del código.
+- **Tailwind CSS** - Framework de utilidades para estilos modernos.
+- **shadcn-ui** - Componentes UI accesibles y personalizables.
 
-There are several ways of editing your application.
+## Instalación y configuración
 
-**Use Lovable**
+Para ejecutar el proyecto en local, sigue estos pasos:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b4c3b7d5-55cb-4d78-a87e-82727ead43ac) and start prompting.
+### **Requisitos previos**
+- Tener instalado **Node.js** y **npm** (se recomienda usar `nvm` para gestionar versiones de Node).
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### **Pasos para ejecutar el proyecto**
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clonar el repositorio
+ git clone https://github.com/ailinbaudin/shock-wave-repair-shop.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Entrar en la carpeta del proyecto
+ cd shock-wave-repair-shop
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Instalar dependencias
+ npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# 4. Iniciar el servidor de desarrollo
+ npm run dev
 ```
 
-**Edit a file directly in GitHub**
+La aplicación se ejecutará en `http://localhost:5173/` por defecto.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Despliegue en GitHub Pages
 
-**Use GitHub Codespaces**
+El proyecto está configurado para desplegarse automáticamente en **GitHub Pages**. Para generar y subir la última versión a producción, usa:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```sh
+npm run build
+npm run deploy
+```
 
-## What technologies are used for this project?
+La aplicación estará disponible en:
 
-This project is built with:
+```
+https://ailinbaudin.github.io/shock-wave-repair-shop/
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Si es necesario, revisa el archivo `vite.config.ts` y asegúrate de que la base esté configurada correctamente:
 
-## How can I deploy this project?
+```ts
+import { defineConfig } from 'vite';
 
-Simply open [Lovable](https://lovable.dev/projects/b4c3b7d5-55cb-4d78-a87e-82727ead43ac) and click on Share -> Publish.
+export default defineConfig({
+  base: '/shock-wave-repair-shop/',
+});
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Contribuciones
 
-Yes it is!
+Si deseas contribuir a este proyecto:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Haz un **fork** del repositorio.
+2. Crea una nueva rama con tu funcionalidad (`git checkout -b feature-nueva`).
+3. Realiza cambios y haz un **commit** (`git commit -m "Descripción del cambio"`).
+4. Envía un **pull request**.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+¡Gracias por tu colaboración!
+
+## Licencia
+
+Este proyecto se encuentra bajo la licencia **MIT**.
