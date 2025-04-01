@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Wrench } from 'lucide-react';
 
@@ -42,6 +41,17 @@ const Footer = () => {
                 +54 9 11 4419-7301
               </a>
             </p>
+          </div>
+        </div>
+
+        {/* Developed by section */}
+        <div className="mt-8 text-center">
+          <p className="text-gray-500">
+            Sitio desarrollado por <a href="https://github.com/ailinbaudin" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange">Ailin Baudin</a>
+          </p>
+          <div className="space-x-4 mt-2">
+            <a href="https://github.com/ailinbaudin" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-orange">GitHub</a>
+            <a href="https://www.linkedin.com/in/frontdeveloper-ailinbaudin/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-orange">LinkedIn</a>
           </div>
         </div>
 
