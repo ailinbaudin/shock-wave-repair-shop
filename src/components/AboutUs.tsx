@@ -14,7 +14,7 @@ const AboutUs = () => {
           {/* Image section */}
           <div className="w-full md:w-1/2 h-80 md:h-96 relative rounded-lg overflow-hidden">
             <img 
-              src="/workshop.jpg" 
+              src="/suspensión.jpg" 
               alt="Taller de suspensiones" 
               className="w-full h-full object-cover"
               onError={(e) => {
@@ -23,14 +23,11 @@ const AboutUs = () => {
               }}
             />
           </div>
-          
           {/* Text section */}
           <div className="w-full md:w-1/2">
-            <h3 className="text-2xl font-bold mb-4">Experiencia y Calidad</h3>
-            <p className="text-gray-700 mb-6">
-              Somos un taller especializado en la reparación y mantenimiento de sistemas de suspensión para todo tipo de vehículos. Con años de experiencia en el sector, ofrecemos un servicio profesional y de calidad.
-            </p>
-            
+            <h3 style={{ marginTop: '40%' }} className="text-2xl font-bold mb-4">Experiencia y Calidad</h3>
+            <p  className="text-gray-700 mb-6">    
+            Somos un negocio familiar con años de experiencia en la reparación y mantenimiento de amortiguadores. Trabajamos desde nuestro hogar, brindando un servicio de calidad, confianza y dedicación a cada cliente que nos elige. Nuestra pasión por los autos y el compromiso con la seguridad nos han convertido en una opción confiable para quienes buscan un trabajo bien hecho. Aquí, cada reparación se realiza con el mismo cuidado y atención que si fuera nuestro propio vehículo. </p>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="bg-brand-orange p-2 rounded-full">
@@ -41,7 +38,6 @@ const AboutUs = () => {
                   <p className="text-gray-600">Utilizamos tecnología avanzada y piezas de alta calidad para garantizar reparaciones duraderas.</p>
                 </div>
               </div>
-              
               <div className="flex items-start gap-3">
                 <div className="bg-brand-orange p-2 rounded-full">
                   <Car className="h-6 w-6 text-white" />
@@ -58,5 +54,7 @@ const AboutUs = () => {
     </section>
   );
 };
+
+
 
 export default AboutUs;

@@ -5,9 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 // Images for carousel
 const carouselImages = [
-  "/suspension1.jpg",
-  "/suspension2.jpg",
-  "/suspension3.jpg",
+  "/suspensión.jpg",
+  "/suspensión.jpg",
+  "/suspensión.jpg",
+
 ];
 
 const Hero = () => {
@@ -18,17 +19,17 @@ const Hero = () => {
           {carouselImages.map((image, index) => (
             <CarouselItem key={index} className="h-full">
               <div className="h-full w-full relative">
-                {/* Semi-transparent overlay */}
+                {}
                 <div className="absolute inset-0 bg-brand-black/70 z-10"></div>
                 
-                {/* Image (use a placeholder for now) */}
+                {}
                 <img 
                   src={image} 
                   alt={`Suspensiones y reparaciones imagen ${index + 1}`}
                   className="carousel-image"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7";
+                    target.src = "../";
                   }}
                 />
                 

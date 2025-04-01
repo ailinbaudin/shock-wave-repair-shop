@@ -14,7 +14,7 @@ const ContactSection = () => {
           {/* Map */}
           <div className="w-full md:w-1/2 h-80 md:h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26237.03965874918!2d-58.41748542191413!3d-34.82679249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd38db4ce393f%3A0xdba7d5fbb7ad9bf2!2sBurzaco%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1717023969994!5m2!1ses!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13120.633391273194!2d-58.3947603!3d-34.8174641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd25317fafe3f%3A0x8a1e0e2c49d9c4f2!2sFrancisco%20Alvarez%201568%2C%20Burzaco%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1717023969994!5m2!1ses!2sar"
               width="100%"
               height="100%"
               style={{ border: 0, borderRadius: '0.5rem' }}
@@ -28,7 +28,7 @@ const ContactSection = () => {
           {/* Contact info */}
           <div className="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold mb-6">Información de Contacto</h3>
-            
+
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="bg-brand-orange p-3 rounded-full">
@@ -36,17 +36,17 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Ubicación</h4>
-                  <p className="text-gray-600">Francisco Álvarez, Burzaco, Buenos Aires</p>
+                  <p className="text-gray-600">Francisco Álvarez 1568, Claypole, Buenos Aires</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4">
                 <div className="bg-brand-orange p-3 rounded-full">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Teléfono</h4>
-                  <a 
+                  <a
                     href="https://wa.me/5491144197301"
                     target="_blank"
                     rel="noopener noreferrer"
