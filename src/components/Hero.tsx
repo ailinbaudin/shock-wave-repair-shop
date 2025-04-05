@@ -26,7 +26,7 @@ const Hero = () => {
                 <img 
                   src={image} 
                   alt={`Suspensiones y reparaciones imagen ${index + 1}`}
-                  className="carousel-image"
+                  className=" class-especial carousel-image"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = "../";
